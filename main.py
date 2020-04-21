@@ -1,3 +1,8 @@
 import initTrack
 
-initTrack.initialise()
+data=initTrack.initialise()
+
+initTrack.rollinit()
+print(data)
+
+print(initTrack.takeinit(data, 1))
