@@ -1,0 +1,14 @@
+[
+	{
+		"id": "12",
+		"name": "Marceline the Vampire Queen",
+		"bonus": "3",
+		"initiative": ""
+	},
+	{
+		"id": "23",
+                "name": "Finn the Human",
+                "bonus": "-1",
+                "initiative": ""
+	}
+]
