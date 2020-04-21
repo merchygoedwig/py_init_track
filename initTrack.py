@@ -1,7 +1,5 @@
 from prettytable import PrettyTable
 import json
-from random import seed
-from random import randint
 
 def dataimport():
     with open("playerdata.json","r") as player_data:
@@ -25,14 +23,3 @@ def initialise():
     print('The following data have been initialised from memory:')
     tableprint(data)
     print('There are',len(data),' options available:')
-    return data
-  
-def takeinit(elem,i):
-    return elem[i]["initiative"]
-  
-def rollinit():
-    seed(randint(1,100))
-    for i in range(len(data)):
-        data[i]["initiative"]=randint(1,20)+int(data[i]["bonus"])
-    
-    data.sort(key=takeinit(data,range(1,len(data))))
